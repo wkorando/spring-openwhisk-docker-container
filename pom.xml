@@ -10,11 +10,11 @@
 		<version>2.3.0.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.ibm.aa</groupId>
-	<artifactId>aa-serverless-function</artifactId>
+	<groupId>com.ibm.function</groupId>
+	<artifactId>custom-serverless-function</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>aa-serverless-function</name>
-	<description>Example of</description>
+	<description>Example of building and creating a complex function</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -39,21 +39,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-			<scope>provided</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>com.fasterxml.jackson.core</groupId>
-					<artifactId>*</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>com.fasterxml.jackson.datatype</groupId>
-					<artifactId>*</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>com.google.code.gson</groupId>
-			<artifactId>gson</artifactId>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
@@ -116,11 +101,6 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
@@ -139,7 +119,7 @@
 	</dependencyManagement>
 
 	<build>
-		<finalName>aa-serverless-function</finalName>
+		<finalName>custom-serverless-function</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
