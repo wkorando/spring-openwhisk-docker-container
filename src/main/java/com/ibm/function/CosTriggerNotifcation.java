@@ -5,11 +5,15 @@ import java.io.Serializable;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 /**
- * "bucket_name": "bucket_name", "content_type": "application/octet-stream",
- * "event_type": "Object:Write", "format": "2.0", "object_etag":
- * "a2b2d66938b1f023dec6394f12b782b5", "object_length": "5", "object_name":
- * "sample.txt", "request_id": "216c7ddb-218c-4fb7-84d2-293f286b62e6",
- * "request_time": "2019-09-04T14:40:35.294Z"
+ * "bucket_name": "bucket_name", <br/>
+ * "content_type": "application/octet-stream",<br/>
+ * "event_type": "Object:Write", <br/>
+ * "format": "2.0", <br/>
+ * "object_etag": "a2b2d66938b1f023dec6394f12b782b5", <br/>
+ * "object_length": "5", <br/>
+ * "object_name": "sample.txt", <br/>
+ * "request_id": "216c7ddb-218c-4fb7-84d2-293f286b62e6",<br/>
+ * "request_time": "2019-09-04T14:40:35.294Z"<br/>
  * 
  * @author William.Korando@ibm.com
  *
