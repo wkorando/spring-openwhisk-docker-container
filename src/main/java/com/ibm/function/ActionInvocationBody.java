@@ -5,32 +5,43 @@ import java.io.Serializable;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
+ * Model object translating body sent in call to {@code POST: /}<br/>
  * "bucket": "bucket_name" <br/>
  * "endpoint": "s3.private.us-east.cloud-object-storage.appdomain.cloud"<br/>
  * "key": "sample.txt", <br/>
  * "notification": { see: {@link CosTriggerNotifcation} }<br/>
+ * "__bx_creds" : { see: {@link BluemixCredentials} }<br/>
  * 
  * @author William.Korando@ibm.com
  *
  */
-public class CosTriggerMessage implements Serializable {
+public class ActionInvocationBody implements Serializable {
 
 	private static final long serialVersionUID = 4380164869741710688L;
+	/**
+	 * Name of bucket where new object was added.
+	 */
 	private String bucket;
+	/**
+	 * Endpoint where bucket is located.
+	 */
 	private String endpoint;
+	/**
+	 * Unique key to look up added object.
+	 */
 	private String key;
 	private CosTriggerNotifcation notification;
 	@JsonProperty("__bx_creds")
-	private Credentials credentials;
+	private BluemixCredentials credentials;
 
-	public CosTriggerMessage() {
+	public ActionInvocationBody() {
 	}
 
-	public Credentials getCredentials() {
+	public BluemixCredentials getCredentials() {
 		return credentials;
 	}
 
-	public void setCredentials(Credentials credentials) {
+	public void setCredentials(BluemixCredentials credentials) {
 		this.credentials = credentials;
 	}
 
@@ -91,7 +102,7 @@ public class CosTriggerMessage implements Serializable {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		CosTriggerMessage other = (CosTriggerMessage) obj;
+		ActionInvocationBody other = (ActionInvocationBody) obj;
 		if (bucket == null) {
 			if (other.bucket != null)
 				return false;

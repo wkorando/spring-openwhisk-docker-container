@@ -33,6 +33,4 @@ public class Application {
 		filterBean.setUrlPatterns(Arrays.asList("/run"));
 		return filterBean;
 	}
-	
-	
 }

@@ -3,16 +3,18 @@ package com.ibm.function;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
- * apikey: 'Eq2Xes-n_kHOgDe9asXfuwJ7sZGDUGka7FEtUu2iGxxY'
- * credentials: 'creds_aa-cos',",
- * endpoints: 'https://control.cloud-object-storage.cloud.ibm.com/v2/endpoints',",
- * iam_apikey_description: 'Auto-generated for key
- * 6466cdd4-28b9-466c-b9ae-6c52cf6a5f16',", "2020-05-29T16:08:47.626209Z stdout:
- * iam_apikey_name: 'creds_aa-cos',", "2020-05-29T16:08:47.626213Z stdout:
- * iam_role_crn: 'crn:v1:bluemix:public:iam::::serviceRole:Manager',",
- * iam_serviceid_crn: 'crn:v1:bluemix:public:iam-identity::a/4b4c36db94004c51b937b0343f8960f0::serviceid:ServiceId-5707d9ed-6a86-4e72-a840-637feb3e14ff',",
- * instance: 'aa-cos',
- * resource_instance_id:'crn:v1:bluemix:public:cloud-object-storage:global:a/4b4c36db94004c51b937b0343f8960f0:abc271f5-41ab-467e-bf1c-869d85ad811e::'
+ * Model object for reading in Cloud Object Storage credential information.
+ * 
+ * JSON model looks like below: <br/>
+ * apikey: 'Eq2Xes-n_kHOgDe9asXfuwJ7sZGDUGka7FEtUu2iGxxY'<br/>
+ * credentials: 'creds_aa-cos',<br/>
+ * endpoints: 'https://control.cloud-object-storage.cloud.ibm.com/v2/endpoints',<br/>
+ * iam_apikey_description: 'Auto-generated for key 6466cdd4-28b9-466c-b9ae-6c52cf6a5f16',<br/> 
+ * iam_apikey_name: 'creds_aa-cos',<br/>
+ * iam_role_crn: 'crn:v1:bluemix:public:iam::::serviceRole:Manager',<br/>
+ * iam_serviceid_crn: 'crn:v1:bluemix:public:iam-identity::a/4b4c36db94004c51b937b0343f8960f0::serviceid:ServiceId-5707d9ed-6a86-4e72-a840-637feb3e14ff',<br/>
+ * instance: 'aa-cos',<br/>
+ * resource_instance_id:'crn:v1:bluemix:public:cloud-object-storage:global:a/4b4c36db94004c51b937b0343f8960f0:abc271f5-41ab-467e-bf1c-869d85ad811e::'<br/>
  * 
  * @author William.Korando@ibm.com
  *

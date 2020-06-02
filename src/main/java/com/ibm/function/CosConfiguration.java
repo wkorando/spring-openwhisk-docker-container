@@ -10,6 +10,13 @@ import com.ibm.cloud.objectstorage.oauth.BasicIBMOAuthCredentials;
 import com.ibm.cloud.objectstorage.services.s3.AmazonS3;
 import com.ibm.cloud.objectstorage.services.s3.AmazonS3ClientBuilder;
 
+/**
+ * Configuration/Service class that handles connection information to Cloud Object Storage (which implements AmazonS3 API). 
+ * 
+ * This differs from typical configuration class as connection information is supplied through action invocation, instead of at start up.  
+ * @author William.Korando@ibm.com
+ *
+ */
 @Service
 public class CosConfiguration {
 	private AmazonS3 amazonS3;
