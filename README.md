@@ -74,13 +74,18 @@ Below is a flow chart of the overall flow of the function from the perspective O
 
 
 
-`ibmcloud resource service-key-create creds_aa-cos Manager --instance-name aa-cos`
+```
+ibmcloud resource service-key-create creds_aa-cos Manager --instance-name aa-cos
+```
 
-`ibmcloud fn service bind cloud-object-storage aa-functions --instance aa-cos --keyname creds_aa-cos`
+```
+ibmcloud fn service bind cloud-object-storage aa-functions --instance aa-cos --keyname creds_aa-cos
+```
 
-
+```
 mvn clean install 
 zip -d target/aa-serverless-function.jar "BOOT-INF/lib/*" 
 docker build . -t aa-serverless:demo-spring35 
 docker push wkorando/aa-serverless:demo-spring-35
 ibmcloud fn action update trigger-test target/aa-serverless-function.jar --docker wkorando/aa-serverless:demo-spring-35
+```
